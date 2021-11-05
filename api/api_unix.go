@@ -7,11 +7,11 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -L/Users/lee.shw/Documents/Work/999.Work_Space/git/go-projects/src/github.com/hwikpass/alticli/altibase/lib  -lodbccli -ldl
+// #cgo darwin LDFLAGS: -L/Users/lee.shw/Documents/Work/999.Work_Space/workspace/altibase/lib  -lodbccli -ldl
 // -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo darwin CFLAGS: -I/Users/lee.shw/Documents/Work/999.Work_Space/git/go-projects/src/github.com/hwikpass/alticli/altibase/include
-// #cgo linux LDFLAGS: -L/Users/lee.shw/Documents/Work/999.Work_Space/git/go-projects/src/github.com/hwikpass/alticli/altibase/lib -lodbccli -ldl
-// #cgo linux CFLAGS: -I$/Users/lee.shw/Documents/Work/999.Work_Space/git/go-projects/src/github.com/hwikpass/alticli/altibase/include
+// #cgo darwin CFLAGS: -I/Users/lee.shw/Documents/Work/999.Work_Space/workspace/altibase/include
+// #cgo linux LDFLAGS: -L/Users/lee.shw/Documents/Work/999.Work_Space/workspace/altibase/lib -lodbccli -ldl
+// #cgo linux CFLAGS: -I$/Users/lee.shw/Documents/Work/999.Work_Space/workspace/altibase/include
 // -lpthread -lcrypt -lrt -lstdc++ -lm
 
 // #include <sqlcli.h>
