@@ -7,9 +7,10 @@ package alticli
 import (
 	"database/sql/driver"
 	"fmt"
-	"github.com/bsshin71/alticli/api"
 	"strings"
 	"unsafe"
+
+	"github.com/hwikpass/alticli/api"
 )
 
 func IsError(ret api.SQLRETURN) bool {

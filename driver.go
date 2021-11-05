@@ -8,7 +8,8 @@ package alticli
 
 import (
 	"database/sql"
-	"github.com/bsshin71/alticli/api"
+
+	"github.com/hwikpass/alticli/api"
 )
 
 var drv Driver

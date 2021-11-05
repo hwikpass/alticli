@@ -6,8 +6,9 @@ package alticli
 
 import (
 	"database/sql/driver"
-	"github.com/bsshin71/alticli/api"
 	"io"
+
+	"github.com/hwikpass/alticli/api"
 )
 
 type Rows struct {

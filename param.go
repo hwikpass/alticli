@@ -7,9 +7,10 @@ package alticli
 import (
 	"database/sql/driver"
 	"fmt"
-	"github.com/bsshin71/alticli/api"
 	"time"
 	"unsafe"
+
+	"github.com/hwikpass/alticli/api"
 )
 
 type Parameter struct {

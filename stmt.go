@@ -9,7 +9,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/bsshin71/alticli/api"
+	"github.com/hwikpass/alticli/api"
 )
 
 type Stmt struct {

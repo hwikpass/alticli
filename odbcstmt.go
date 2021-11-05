@@ -8,10 +8,11 @@ import (
 	"database/sql/driver"
 	"errors"
 	"fmt"
-	"github.com/bsshin71/alticli/api"
 	"sync"
 	"time"
 	"unsafe"
+
+	"github.com/hwikpass/alticli/api"
 )
 
 // TODO(brainman): see if I could use SQLExecDirect anywhere
