@@ -11,7 +11,7 @@ package api
 // -lpthread -lcrypt -lrt -lstdc++ -lm
 // #cgo darwin CFLAGS: -I/usr/local/altibase/include
 // #cgo linux LDFLAGS: -L/usr/local/altibase/lib -lodbccli -ldl
-// #cgo linux CFLAGS: -I$/usr/local/altibase/include
+// #cgo linux CFLAGS: -I/usr/local/altibase/include
 // -lpthread -lcrypt -lrt -lstdc++ -lm
 
 // #include <sqlcli.h>

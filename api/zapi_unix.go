@@ -15,7 +15,7 @@ import "unsafe"
 // #cgo darwin LDFLAGS: -L/usr/local/altibase/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
 // #cgo darwin CFLAGS: -I/usr/local/altibase/include
 // #cgo linux LDFLAGS: -L/usr/local/altibase/lib -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo linux CFLAGS: -I$/usr/local/altibase/include
+// #cgo linux CFLAGS: -I/usr/local/altibase/include
 // #include <sqlcli.h>
 import "C"
 
