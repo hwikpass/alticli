@@ -5,6 +5,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build (darwin || linux) && cgo
 // +build darwin linux
 // +build cgo
 
@@ -12,10 +13,10 @@ package api
 
 import "unsafe"
 
-// #cgo darwin LDFLAGS: -L/usr/local/altibase/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo darwin CFLAGS: -I/usr/local/altibase/include
-// #cgo linux LDFLAGS: -L/usr/local/altibase/lib -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo linux CFLAGS: -I/usr/local/altibase/include
+// #cgo darwin LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
+// #cgo darwin CFLAGS: -I/etc/altibase-server-7.1.0/include
+// #cgo linux LDFLAGS: -L/etc/altibase-server-7.1.0/lib -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
+// #cgo linux CFLAGS: -I/etc/altibase-server-7.1.0/include
 // #include <sqlcli.h>
 import "C"
 

@@ -7,11 +7,11 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -L/usr/local/altibase/lib  -lodbccli -ldl
+// #cgo darwin LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl
 // -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo darwin CFLAGS: -I/usr/local/altibase/include
-// #cgo linux LDFLAGS: -L/usr/local/altibase/lib -lodbccli -ldl
-// #cgo linux CFLAGS: -I/usr/local/altibase/include
+// #cgo darwin CFLAGS: -I/etc/altibase-server-7.1.0/include
+// #cgo linux LDFLAGS: -L/etc/altibase-server-7.1.0/lib -lodbccli -ldl
+// #cgo linux CFLAGS: -I/etc/altibase-server-7.1.0/include
 // -lpthread -lcrypt -lrt -lstdc++ -lm
 
 // #include <sqlcli.h>
@@ -88,7 +88,6 @@ const (
 	SQL_UNSIGNED_OFFSET = C.SQL_UNSIGNED_OFFSET
 
 	// TODO(lukemauldin): Not defined in sqlext.h. Using windows value, but it is not supported.
-
 	SQL_SS_XML   = -152
 	SQL_SS_TIME2 = -154
 
