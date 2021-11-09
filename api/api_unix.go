@@ -7,8 +7,8 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
-// #cgo darwin CFLAGS: -I/etc/altibase-server-7.1.0/include
+// #cgo LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
+// #cgo CFLAGS: -I/etc/altibase-server-7.1.0/include
 // #include <sqlcli.h>
 // #include <sqlext.h>
 // #include <stdint.h>
