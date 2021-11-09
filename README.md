@@ -14,7 +14,7 @@ import (
     "database/sql"
     "flag"
     "fmt"
-    _ "github.com/bsshin71/alticli"
+    _ "github.com/hwikpass/alticli"
     "os"
     "time"
 )

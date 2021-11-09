@@ -7,13 +7,8 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl
-// -lpthread -lcrypt -lrt -lstdc++ -lm
+// #cgo darwin LDFLAGS: -L/etc/altibase-server-7.1.0/lib  -lodbccli -ldl -lpthread -lcrypt -lrt -lstdc++ -lm
 // #cgo darwin CFLAGS: -I/etc/altibase-server-7.1.0/include
-// #cgo linux LDFLAGS: -L/etc/altibase-server-7.1.0/lib -lodbccli -ldl
-// #cgo linux CFLAGS: -I/etc/altibase-server-7.1.0/include
-// -lpthread -lcrypt -lrt -lstdc++ -lm
-
 // #include <sqlcli.h>
 // #include <sqlext.h>
 // #include <stdint.h>
@@ -21,7 +16,6 @@ package api
 SQLRETURN sqlSetEnvUIntPtrAttr(SQLHENV environmentHandle, SQLINTEGER attribute, uintptr_t valuePtr, SQLINTEGER stringLength) {
 	return SQLSetEnvAttr(environmentHandle, attribute, (SQLPOINTER)valuePtr, stringLength);
 }
-
 SQLRETURN sqlSetConnectUIntPtrAttr(SQLHDBC connectionHandle, SQLINTEGER attribute, uintptr_t valuePtr, SQLINTEGER stringLength) {
 	return SQLSetConnectAttr(connectionHandle, attribute, (SQLPOINTER)valuePtr, stringLength);
 }
